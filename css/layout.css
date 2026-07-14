@@ -1,0 +1,307 @@
+/* ==========================================================
+   LAYOUT.CSS
+   Premium Portfolio Layout System
+   ----------------------------------------------------------
+   Responsibilities:
+   - Page structure
+   - Containers
+   - Section spacing
+   - Hero layout
+   - Grid alignment
+   - Bootstrap enhancements only
+
+   NO typography
+   NO colors
+   NO buttons
+   NO cards
+   NO animations
+========================================================== */
+
+
+/* ==========================================================
+   MAIN
+========================================================== */
+
+main{
+    width:100%;
+    overflow:hidden;
+}
+
+
+/* ==========================================================
+   SECTION DEFAULT
+========================================================== */
+
+section{
+    position:relative;
+    width:100%;
+    padding-block:clamp(5rem,8vw,7rem);
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+    max-width:1200px;
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero-section{
+
+    min-height:calc(100vh - 90px);
+
+    display:flex;
+
+    align-items:center;
+
+    padding-top:0rem;
+
+    padding-bottom:0rem;
+
+    background-color: #FEFEFE;
+}
+
+
+.hero-content{
+
+    max-width:640px;
+}
+
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:220px;
+
+    max-height:520px;
+
+    height:auto;
+
+    object-fit:contain;
+}
+
+
+/* ==========================================================
+   FEATURED PROJECTS
+========================================================== */
+
+.featured-projects-section{
+
+    padding-top:4rem;
+
+    padding-bottom:4rem;
+}
+
+
+.project-card{
+
+    height:100%;
+}
+
+
+/* ==========================================================
+   ABOUT PREVIEW
+========================================================== */
+
+.about-preview-section{
+
+    padding-top:4rem;
+
+    padding-bottom:4rem;
+}
+
+
+.about-preview-image{
+
+    display:flex;
+
+    justify-content:center;
+}
+
+
+.about-preview-image img{
+
+    width:100%;
+
+    max-width:480px;
+
+    height:auto;
+}
+
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+.contact-cta-section{
+
+    padding-top:4rem;
+
+    padding-bottom:4rem;
+}
+
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.site-footer{
+
+    padding-top:4rem;
+
+    padding-bottom:2rem;
+}
+
+
+/* ==========================================================
+   BOOTSTRAP SPACING IMPROVEMENTS
+========================================================== */
+
+.row{
+
+    --bs-gutter-x:2rem;
+
+    --bs-gutter-y:2rem;
+}
+
+
+/* ==========================================================
+   DESKTOP LARGE
+========================================================== */
+
+@media(min-width:1400px){
+
+.container{
+
+max-width:1280px;
+
+}
+
+.hero-image img{
+
+max-width:520px;
+
+}
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media(max-width:991.98px){
+
+.hero-section{
+
+min-height:auto;
+
+padding-top:5rem;
+
+padding-bottom:5rem;
+
+text-align:center;
+
+}
+
+.hero-content{
+
+margin-inline:auto;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-image{
+
+margin-top:2rem;
+
+}
+
+.about-preview-content{
+
+text-align:center;
+
+}
+
+.about-preview-image{
+
+margin-top:2rem;
+
+}
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:767.98px){
+
+section{
+
+padding-block:4rem;
+
+}
+
+.hero-section{
+
+padding-top:4rem;
+
+padding-bottom:4rem;
+
+}
+
+.container{
+
+padding-left:1.25rem;
+
+padding-right:1.25rem;
+
+}
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media(max-width:575.98px){
+
+section{
+
+padding-block:3.5rem;
+
+}
+
+.hero-image img{
+
+max-width:320px;
+
+}
+
+}

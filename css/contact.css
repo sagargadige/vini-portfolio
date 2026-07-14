@@ -1,0 +1,975 @@
+/* ==========================================================
+   CONTACT.CSS
+   ----------------------------------------------------------
+   PART 1 — CONTACT HERO
+========================================================== */
+
+
+/* ==========================================================
+   CONTACT HERO SECTION
+========================================================== */
+
+.contact-hero-section{
+
+    padding-block:2rem;
+
+}
+
+
+
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.contact-hero-content{
+
+    max-width:620px;
+
+}
+
+.contact-hero-content .section-subtitle{
+
+    margin-bottom:1rem;
+
+}
+
+.contact-hero-content .page-title{
+
+    max-width:650px;
+
+    margin-top:.75rem;
+
+    margin-bottom:1.5rem;
+
+}
+
+.contact-hero-text{
+
+    max-width:590px;
+
+    margin-bottom:1.25rem;
+
+    line-height:1.7;
+
+    color:var(--color-text);
+
+}
+
+
+
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-items:center;
+
+    gap:1rem;
+
+    margin-top:2rem;
+
+}
+
+.hero-buttons .btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.6rem;
+
+}
+
+.hero-buttons i{
+
+    font-size:1rem;
+
+}
+
+
+
+/* ==========================================================
+   HERO IMAGE
+========================================================== */
+
+.contact-hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.contact-hero-image .editorial-image{
+
+    width:100%;
+
+    max-width:390px;
+
+    overflow:hidden;
+
+    border-radius:
+        48% 52% 42% 58%
+        /
+        38% 40% 60% 62%;
+
+    box-shadow:0 18px 50px rgba(0,0,0,.08);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.contact-hero-image .editorial-image:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 24px 60px rgba(0,0,0,.12);
+
+}
+
+.contact-hero-image .editorial-image img{
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:transform .45s ease;
+
+}
+
+.contact-hero-image .editorial-image:hover img{
+
+    transform:scale(1.04);
+
+}
+
+
+
+/* ==========================================================
+   LARGE DESKTOP
+========================================================== */
+
+@media (min-width:1400px){
+
+    .contact-hero-content{
+
+        max-width:650px;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:991.98px){
+
+    .contact-hero-section{
+
+        text-align:center;
+
+    }
+
+    .contact-hero-content{
+
+        margin-inline:auto;
+
+    }
+
+    .contact-hero-text{
+
+        margin-inline:auto;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .contact-hero-image{
+
+        margin-top:2rem;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:767.98px){
+
+    .contact-hero-section{
+
+        padding-block:1.5rem;
+
+    }
+
+    .contact-hero-content .page-title{
+
+        margin-bottom:1.25rem;
+
+    }
+
+    .contact-hero-text{
+
+        margin-bottom:1rem;
+
+    }
+
+    .contact-hero-image .editorial-image{
+
+        max-width:310px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
+/* ==========================================================
+   CONTACT HERO BUTTONS
+========================================================== */
+
+.contact-hero-section .hero-buttons .btn-primary,
+.contact-hero-section .hero-buttons .btn-secondary{
+
+    background-color:#ffffff;
+
+    color:var(--color-accent-hover);
+
+    border:2px solid var(--color-accent-hover);
+
+    transition:
+        background-color .35s ease,
+        color .35s ease,
+        border-color .35s ease,
+        transform .25s ease,
+        box-shadow .35s ease;
+
+}
+
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.contact-hero-section .hero-buttons .btn-primary:hover,
+.contact-hero-section .hero-buttons .btn-secondary:hover{
+
+    background-color:var(--color-accent-hover);
+
+    color:#ffffff;
+
+    border-color:var(--color-accent-hover);
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(200,150,88,.25);
+
+}
+
+
+/* ==========================================================
+   ACTIVE / CLICK
+========================================================== */
+
+.contact-hero-section .hero-buttons .btn-primary:active,
+.contact-hero-section .hero-buttons .btn-secondary:active{
+
+    background-color:#000000;
+
+    color:#ffffff;
+
+    border-color:#000000;
+
+    transform:translateY(0);
+
+    box-shadow:none;
+
+}
+
+
+/* ==========================================================
+   KEYBOARD FOCUS
+========================================================== */
+
+.contact-hero-section .hero-buttons .btn-primary:focus-visible,
+.contact-hero-section .hero-buttons .btn-secondary:focus-visible{
+
+    outline:none;
+
+    box-shadow:0 0 0 .25rem rgba(200,150,88,.20);
+
+}
+
+
+/* ==========================================================
+   ICONS
+========================================================== */
+
+.contact-hero-section .hero-buttons .btn i{
+
+    color:inherit;
+
+    transition:color .35s ease;
+
+}
+/* ==========================================================
+   CONTACT INFORMATION
+========================================================== */
+
+.contact-info-section{
+
+    padding-block:2rem;
+
+}
+
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
+.contact-info-section .section-title{
+
+    max-width:700px;
+
+    margin:.75rem auto 0;
+
+    font-size:clamp(2.2rem,3vw,3.2rem);
+
+    line-height:1.15;
+
+    letter-spacing:-0.02em;
+
+}
+
+
+/* ==========================================================
+   CONTACT CARD
+========================================================== */
+
+.contact-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1.5rem;
+
+    width:100%;
+
+    height:100%;
+
+    padding:2rem;
+
+    text-decoration:none;
+
+    background:#ffffff;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    border-radius:24px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.05);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+}
+
+
+/* ==========================================================
+   CARD HOVER
+========================================================== */
+
+.contact-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--color-accent-hover);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+
+/* ==========================================================
+   ICON BOX
+========================================================== */
+
+.contact-card-icon{
+
+    width:72px;
+
+    height:72px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:20px;
+
+    background:rgba(200,150,88,.10);
+
+    transition:
+        background .35s ease,
+        transform .35s ease;
+
+}
+
+
+.contact-card:hover .contact-card-icon{
+
+    background:var(--color-accent-hover);
+
+    transform:scale(1.05);
+
+}
+
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.contact-card-icon i{
+
+    font-size:1.8rem;
+
+    color:var(--color-accent-hover);
+
+    transition:color .35s ease;
+
+}
+
+
+.contact-card:hover .contact-card-icon i{
+
+    color:#ffffff;
+
+}
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.contact-card-content{
+
+    flex:1;
+
+}
+
+
+.contact-label{
+
+    display:block;
+
+    margin-bottom:.45rem;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    letter-spacing:.15em;
+
+    text-transform:uppercase;
+
+    color:var(--color-accent-hover);
+
+}
+
+
+.contact-value{
+
+    margin:0;
+
+    font-family:var(--font-body);
+
+    font-size:1.35rem;
+
+    font-weight:500;
+
+    color:var(--color-heading);
+
+    word-break:break-word;
+
+    transition:color .35s ease;
+
+}
+
+
+.contact-note{
+
+    margin-top:.6rem;
+
+    margin-bottom:0;
+
+    font-size:.96rem;
+
+    line-height:1.65;
+
+    color:var(--color-text);
+
+}
+
+
+/* ==========================================================
+   HOVER TYPOGRAPHY
+========================================================== */
+
+.contact-card:hover .contact-value{
+
+    color:var(--color-accent-hover);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:991.98px){
+
+    .contact-card{
+
+        padding:1.75rem;
+
+    }
+
+}
+
+
+@media (max-width:767.98px){
+
+    .contact-info-section{
+
+        padding-block:1.5rem;
+
+    }
+
+    .contact-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:1.75rem 1.5rem;
+
+    }
+
+    .contact-card-content{
+
+        width:100%;
+
+    }
+
+    .contact-value{
+
+        font-size:1.2rem;
+
+    }
+
+}
+/* ==========================================================
+   CONTACT FORM
+========================================================== */
+
+.contact-form-section{
+
+    padding-block:2rem;
+
+}
+
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
+.contact-form-section .section-title{
+
+    max-width:700px;
+
+    margin:.75rem auto 0;
+
+    font-size:clamp(2.2rem,3vw,3.2rem);
+
+    line-height:1.15;
+
+    letter-spacing:-0.02em;
+
+}
+
+
+.contact-form-section .section-description{
+
+    max-width:620px;
+
+    margin:1rem auto 0;
+
+    line-height:1.7;
+
+    color:var(--color-text);
+
+}
+
+
+/* ==========================================================
+   FORM WRAPPER
+========================================================== */
+
+#contactForm{
+
+    background:#ffffff;
+
+    padding:1rem;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    border-radius:32px;
+
+    box-shadow:0 18px 50px rgba(0,0,0,.05);
+
+}
+
+
+/* ==========================================================
+   FORM CONTROLS
+========================================================== */
+
+.form-floating{
+
+    margin-bottom:1rem;
+
+}
+
+
+.form-floating>.form-control,
+
+.form-floating>.form-select{
+
+    height:50px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(0,0,0,.12);
+
+    background:#ffffff;
+
+    color:var(--color-heading);
+
+    font-size:1rem;
+
+    padding:1.6rem 1.25rem .6rem;
+
+    transition:
+
+        border-color .35s ease,
+
+        box-shadow .35s ease,
+
+        background-color .35s ease;
+
+}
+
+
+.form-floating>textarea.form-control{
+
+    min-height:150px;
+
+    resize:vertical;
+
+    padding-top:2rem;
+
+}
+
+
+/* ==========================================================
+   LABELS
+========================================================== */
+
+.form-floating>label{
+
+    color:var(--color-text);
+
+    padding:1rem 1.25rem;
+
+    transition:
+
+        color .35s ease,
+
+        transform .35s ease;
+
+}
+
+
+/* ==========================================================
+   FOCUS STATE
+========================================================== */
+
+.form-floating>.form-control:focus{
+
+    border-color:var(--color-accent-hover);
+
+    box-shadow:0 0 0 .2rem rgba(200,150,88,.15);
+
+    background:#ffffff;
+
+}
+
+
+.form-floating>.form-control:focus~label{
+
+    color:var(--color-accent-hover);
+
+}
+
+
+/* ==========================================================
+   PLACEHOLDER
+========================================================== */
+
+.form-control::placeholder{
+
+    color:#b7b7b7;
+
+}
+
+
+/* ==========================================================
+   SUBMIT BUTTON
+========================================================== */
+
+#submitBtn{
+
+    min-width:220px;
+
+    padding:.8rem 2rem;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    letter-spacing:.02em;
+
+    transition:
+
+        transform .3s ease,
+
+        box-shadow .35s ease;
+
+}
+
+
+#submitBtn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(200,150,88,.25);
+
+}
+
+
+#submitBtn i{
+
+    margin-right:.45rem;
+
+}
+
+
+/* ==========================================================
+   REMOVE BOOTSTRAP BLUE SHADOW
+========================================================== */
+
+.form-control:focus{
+
+    outline:none;
+
+}
+
+
+/* ==========================================================
+   VALIDATION STATES
+========================================================== */
+
+.form-control.is-valid{
+
+    border-color:#198754;
+
+}
+
+
+.form-control.is-invalid{
+
+    border-color:#dc3545;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:991.98px){
+
+    #contactForm{
+
+        padding:2.5rem;
+
+    }
+
+}
+
+
+@media (max-width:767.98px){
+
+    .contact-form-section{
+
+        padding-block:1.5rem;
+
+    }
+
+    #contactForm{
+
+        padding:2rem 1.5rem;
+
+        border-radius:24px;
+
+    }
+
+    .form-floating>.form-control{
+
+        height:60px;
+
+    }
+
+    .form-floating>textarea.form-control{
+
+        min-height:180px;
+
+    }
+
+    #submitBtn{
+
+        width:100%;
+
+    }
+
+}
+/* ==========================================================
+   GLOBAL PRIMARY BUTTON
+   Used Across Home • About • Contact
+========================================================== */
+
+.btn-primary{
+
+    background:#ffffff;
+
+    color:var(--color-accent-hover);
+
+    border:2px solid var(--color-accent-hover);
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    padding:.9rem 2.2rem;
+
+    transition:
+        background-color .35s ease,
+        color .35s ease,
+        border-color .35s ease,
+        transform .25s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.btn-primary:hover{
+
+    background:var(--color-accent-hover);
+
+    color:#ffffff;
+
+    border-color:var(--color-accent-hover);
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(200,150,88,.25);
+
+}
+
+
+.btn-primary:active{
+
+    background:#000000;
+
+    color:#ffffff;
+
+    border-color:#000000;
+
+    transform:translateY(0);
+
+    box-shadow:none;
+
+}
+
+
+.btn-primary:focus-visible{
+
+    outline:none;
+
+    box-shadow:0 0 0 .25rem rgba(200,150,88,.20);
+
+}
+
+
+.btn-primary i{
+
+    color:inherit;
+
+    transition:color .35s ease;
+
+}

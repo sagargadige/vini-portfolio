@@ -1,0 +1,1299 @@
+/* ==========================================================
+   ABOUT.CSS
+   PART 1 — ABOUT HERO
+========================================================== */
+
+
+/* ==========================================================
+   ABOUT HERO
+========================================================== */
+
+.about-hero-section{
+
+    padding-block: 2rem;
+
+}
+
+
+.about-hero-content{
+
+    max-width:650px;
+
+}
+
+
+.about-hero-content .page-title{
+
+    margin-top:1rem;
+
+    margin-bottom:2rem;
+
+}
+
+
+.about-hero-text{
+
+    max-width:620px;
+
+    margin-bottom:1.5rem;
+
+    line-height:1.7;
+
+}
+
+
+.hero-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+    margin-top:2rem;
+
+}
+
+
+/* ==========================================================
+   HERO IMAGE
+========================================================== */
+
+.about-hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* ==========================================================
+   EDITORIAL IMAGE
+========================================================== */
+
+.editorial-image{
+
+    width:100%;
+
+    max-width:390px;
+
+    overflow:hidden;
+
+    border-radius:
+        48% 52% 42% 58%
+        /
+        38% 40% 60% 62%;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.08);
+
+}
+
+
+.editorial-image img{
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:
+        transform .45s ease;
+
+}
+
+
+.editorial-image:hover img{
+
+    transform:scale(1.04);
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:991.98px){
+
+    .about-hero-section{
+
+        text-align:center;
+
+    }
+
+    .about-hero-content{
+
+        margin-inline:auto;
+
+    }
+
+    .about-hero-text{
+
+        margin-inline:auto;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .about-hero-image{
+
+        margin-top:2.5rem;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:767.98px){
+
+    .editorial-image{
+
+        max-width:320px;
+
+    }
+
+}
+/* ==========================================================
+   PART 2 — MY JOURNEY & DESIGN PHILOSOPHY
+========================================================== */
+
+
+/* ==========================================================
+   SECTION SPACING
+========================================================== */
+
+.my-journey-section,
+.design-philosophy-section{
+
+    padding-block: 2rem;
+
+}
+
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.journey-content,
+.design-content{
+
+    max-width:640px;
+
+}
+
+
+.journey-content .section-subtitle,
+.design-content .section-subtitle{
+
+    display:inline-block;
+
+    margin-bottom:1rem;
+
+}
+
+
+.journey-content .section-title,
+.design-content .section-title{
+
+    margin-bottom:2rem;
+
+    max-width:620px;
+
+}
+
+
+.journey-text,
+.design-text{
+
+    max-width:610px;
+
+    margin-bottom:1.5rem;
+
+    line-height:1.7;
+
+}
+
+
+.journey-text:last-child,
+.design-text:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+.journey-image,
+.design-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* Both sections use the same editorial image */
+
+.journey-image .editorial-image,
+.design-image .editorial-image{
+
+    max-width:380px;
+
+}
+
+
+
+/* ==========================================================
+   IMAGE HOVER
+========================================================== */
+
+.journey-image .editorial-image img,
+.design-image .editorial-image img{
+
+    transition:
+        transform .45s ease,
+        filter .45s ease;
+
+}
+
+
+.journey-image .editorial-image:hover img,
+.design-image .editorial-image:hover img{
+
+    transform:scale(1.04);
+
+}
+
+
+
+/* ==========================================================
+   VISUAL RHYTHM
+========================================================== */
+
+.my-journey-section .row,
+.design-philosophy-section .row{
+
+    align-items:center;
+
+}
+
+
+
+/* ==========================================================
+   LARGE DESKTOP
+========================================================== */
+
+@media (min-width:1400px){
+
+    .journey-content,
+    .design-content{
+
+        max-width:670px;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:991.98px){
+
+    .my-journey-section,
+    .design-philosophy-section{
+
+        text-align:center;
+
+    }
+
+    .journey-content,
+    .design-content{
+
+        margin-inline:auto;
+
+    }
+
+    .journey-content .section-title,
+    .design-content .section-title{
+
+        margin-inline:auto;
+
+    }
+
+    .journey-text,
+    .design-text{
+
+        margin-inline:auto;
+
+    }
+
+    .journey-image,
+    .design-image{
+
+        margin-bottom:2rem;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:767.98px){
+
+    .journey-image .editorial-image,
+    .design-image .editorial-image{
+
+        max-width:320px;
+
+    }
+
+    .journey-content .section-title,
+    .design-content .section-title{
+
+        margin-bottom:1.5rem;
+
+    }
+
+}
+/* ==========================================================
+   PART 3 — EXPERIENCE
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.experience-section{
+
+    padding-block: 2rem;
+
+}
+
+
+.experience-section .section-title{
+
+    max-width:none;
+
+    width:100%;
+
+    margin:.75rem auto 0;
+
+    font-size:clamp(2rem,3vw,3rem);
+
+    line-height:1.15;
+
+    letter-spacing:-0.02em;
+
+    white-space:nowrap;
+
+}
+
+
+
+/* ==========================================================
+   EXPERIENCE GRID
+========================================================== */
+
+.experience-section .row{
+
+    margin-top:.5rem;
+
+}
+
+
+
+/* ==========================================================
+   EXPERIENCE CARD
+========================================================== */
+
+.experience-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    min-height:100%;
+
+    padding:2rem;
+
+}
+
+
+
+/* ==========================================================
+   YEAR BADGE
+========================================================== */
+
+.experience-year{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:90px;
+
+    height:38px;
+
+    border-radius:999px;
+
+    margin-bottom:1.5rem;
+
+    background:rgba(0,0,0,.05);
+
+}
+
+
+
+/* ==========================================================
+   ROLE
+========================================================== */
+
+.experience-role{
+
+    margin-bottom:.5rem;
+
+    line-height:1.2;
+
+}
+
+
+
+/* ==========================================================
+   COMPANY
+========================================================== */
+
+.experience-company{
+
+    margin-bottom:1.5rem;
+
+    font-style:italic;
+
+    opacity:.75;
+
+}
+
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.experience-description{
+
+    margin-bottom:0;
+
+    line-height:1.7;
+
+}
+
+
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.experience-card{
+
+    overflow:hidden;
+
+}
+
+
+.experience-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:transparent;
+
+    transition:all .35s ease;
+
+}
+
+
+.experience-card:hover::before{
+
+    background:var(--color-accent);
+
+}
+
+
+.experience-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:991.98px){
+
+    .experience-section{
+
+        text-align:center;
+
+    }
+
+    .experience-card{
+
+        padding:2.25rem;
+
+    }
+
+    .experience-year{
+
+        margin-inline:auto;
+
+    }
+
+}
+
+
+@media (max-width:767.98px){
+
+    .experience-card{
+
+        padding:2rem;
+
+    }
+
+    .experience-role{
+
+        font-size:1.6rem;
+
+    }
+
+}
+/* ==========================================================
+   PART 4 — SKILLS
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.skills-section{
+
+    padding-block: 2rem;
+
+}
+
+
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
+.skills-section .section-title{
+
+    max-width:760px;
+
+    margin:1rem auto 0;
+
+}
+
+
+
+/* ==========================================================
+   WRAPPER
+========================================================== */
+
+.skills-wrapper{
+
+    max-width:1000px;
+
+    margin:0 auto;
+
+    padding-top:3.5rem;
+
+}
+
+
+
+/* ==========================================================
+   VISUAL BALANCE
+========================================================== */
+
+.skills-wrapper .skill-item{
+
+    margin:.35rem;
+
+}
+
+
+
+/* ==========================================================
+   BETTER ICON ALIGNMENT
+========================================================== */
+
+.skill-item i{
+
+    flex-shrink:0;
+
+}
+
+
+
+/* ==========================================================
+   HOVER POLISH
+========================================================== */
+
+.skill-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.skill-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    transform:translateX(-120%);
+
+    transition:transform .6s ease;
+
+}
+
+
+.skill-item:hover::before{
+
+    transform:translateX(120%);
+
+}
+
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:991.98px){
+
+    .skills-wrapper{
+
+        max-width:800px;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:767.98px){
+
+    .skills-section{
+
+        text-align:center;
+
+    }
+
+    .skills-wrapper{
+
+        padding-top:2.5rem;
+
+    }
+
+}
+/* ==========================================================
+   PART 5 — PERSONAL SECTION
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.personal-section{
+
+    padding-block: 2rem;
+
+}
+
+
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.personal-section .row{
+
+    justify-content:center;
+
+    align-items:stretch;
+
+}
+
+
+
+/* ==========================================================
+   INFO CARD
+========================================================== */
+
+.personal-section .info-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:flex-start;
+
+    height:100%;
+
+    padding:2.5rem;
+
+}
+
+
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.personal-section .info-card-icon{
+
+    margin-bottom:1.75rem;
+
+}
+
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.personal-section .info-card h3{
+
+    margin-bottom:1rem;
+
+}
+
+
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.personal-section .info-card p{
+
+    line-height:2;
+
+    margin-bottom:0;
+
+}
+
+
+
+/* ==========================================================
+   HOVER EFFECT
+========================================================== */
+
+.personal-section .info-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.personal-section .info-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:var(--color-accent);
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:transform .35s ease;
+
+}
+
+
+.personal-section .info-card:hover::after{
+
+    transform:scaleX(1);
+
+}
+
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:991.98px){
+
+    .personal-section{
+
+        text-align:center;
+
+    }
+
+    .personal-section .info-card{
+
+        align-items:center;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:767.98px){
+
+    .personal-section .info-card{
+
+        padding:2rem;
+
+    }
+
+}
+/* ==========================================================
+   PART 6 — EDUCATION
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.education-section{
+
+    padding-block: 2rem;
+
+}
+
+
+.education-section .section-title{
+
+     max-width:none;
+
+    width:100%;
+
+    margin:.75rem auto 0;
+
+    font-size:clamp(2rem,3vw,3rem);
+
+    line-height:1.15;
+
+    letter-spacing:-0.02em;
+
+    white-space:nowrap;
+
+}
+
+
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.education-section .row{
+
+    margin-top:.5rem;
+
+}
+
+
+
+/* ==========================================================
+   EDUCATION CARD
+========================================================== */
+
+.education-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    min-height:100%;
+
+    padding:2rem;
+
+}
+
+
+
+/* ==========================================================
+   YEAR BADGE
+========================================================== */
+
+.education-year{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:130px;
+
+    height:42px;
+
+    margin-bottom:1.5rem;
+
+    border-radius:999px;
+
+    background:rgba(0,0,0,.05);
+
+}
+
+
+
+/* ==========================================================
+   DEGREE
+========================================================== */
+
+.education-degree{
+
+    margin-bottom:.75rem;
+
+    line-height:1.25;
+
+}
+
+
+
+/* ==========================================================
+   COLLEGE
+========================================================== */
+
+.education-college{
+
+    margin-bottom:1.5rem;
+
+    font-size:1.1rem;
+
+    font-weight:500;
+
+    font-style:italic;
+
+    opacity:.75;
+
+}
+
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.education-description{
+
+    margin-bottom:0;
+
+    line-height:1.9;
+
+}
+
+
+
+/* ==========================================================
+   PREMIUM HOVER
+========================================================== */
+
+.education-card{
+
+    overflow:hidden;
+
+}
+
+
+.education-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:transparent;
+
+    transition:background .35s ease;
+
+}
+
+
+.education-card:hover::before{
+
+    background:var(--color-accent);
+
+}
+
+
+.education-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:991.98px){
+
+    .education-section{
+
+        text-align:center;
+
+    }
+
+    .education-card{
+
+        padding:2.25rem;
+
+    }
+
+    .education-year{
+
+        margin-inline:auto;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:767.98px){
+
+    .education-card{
+
+        padding:2rem;
+
+    }
+
+    .education-degree{
+
+        font-size:1.6rem;
+
+    }
+
+}
+.section-divider{
+
+    border:0;
+
+    border-top:1px solid gray;
+
+    max-width:1255px;
+
+    margin:0 auto;
+
+}
+/* ==========================================================
+   SKILLS HEADING
+========================================================== */
+
+.skills-heading{
+
+    max-width:1400px;
+
+    margin:0 auto;
+
+}
+
+.skills-heading .section-title{
+
+    max-width:none;
+
+    width:100%;
+
+    font-size:clamp(2rem,2.8vw,3rem);
+
+    line-height:1.1;
+
+    letter-spacing:-0.02em;
+
+    white-space:nowrap;
+
+}
+@media (max-width:1200px){
+
+    .skills-heading .section-title{
+
+        white-space:normal;
+
+    }
+
+}
+/* ==========================================================
+   GLOBAL PRIMARY BUTTON
+   Used Across Home • About • Contact
+========================================================== */
+
+.btn-primary{
+
+    background:#ffffff;
+
+    color:var(--color-accent-hover);
+
+    border:2px solid var(--color-accent-hover);
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    padding:.9rem 2.2rem;
+
+    transition:
+        background-color .35s ease,
+        color .35s ease,
+        border-color .35s ease,
+        transform .25s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.btn-primary:hover{
+
+    background:var(--color-accent-hover);
+
+    color:#ffffff;
+
+    border-color:var(--color-accent-hover);
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(200,150,88,.25);
+
+}
+
+
+.btn-primary:active{
+
+    background:#000000;
+
+    color:#ffffff;
+
+    border-color:#000000;
+
+    transform:translateY(0);
+
+    box-shadow:none;
+
+}
+
+
+.btn-primary:focus-visible{
+
+    outline:none;
+
+    box-shadow:0 0 0 .25rem rgba(200,150,88,.20);
+
+}
+
+
+.btn-primary i{
+
+    color:inherit;
+
+    transition:color .35s ease;
+
+}

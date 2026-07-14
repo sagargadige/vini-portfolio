@@ -1,0 +1,211 @@
+/* ==========================================================
+   ANIMATIONS.CSS
+   Premium Editorial Motion System
+   ----------------------------------------------------------
+   Subtle, elegant, performance-friendly animations.
+========================================================== */
+
+
+
+/* ==========================================================
+   GLOBAL TRANSITIONS
+========================================================== */
+
+a,
+button,
+.btn,
+img{
+
+    transition:
+        color .3s ease,
+        background-color .3s ease,
+        border-color .3s ease,
+        transform .35s ease,
+        opacity .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+
+/* ==========================================================
+   FADE IN
+========================================================== */
+
+.fade-in{
+
+    animation:fadeIn .8s ease both;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   FADE UP
+========================================================== */
+
+.fade-up{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(24px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   HERO IMAGE
+========================================================== */
+
+.hero-image img:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+
+/* ==========================================================
+   ABOUT IMAGE
+========================================================== */
+
+.about-preview-image img:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+
+/* ==========================================================
+   PROJECT IMAGE
+========================================================== */
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.04);
+
+}
+
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.btn:active{
+
+    transform:translateY(0);
+
+}
+
+
+
+/* ==========================================================
+   NAV LINKS
+========================================================== */
+
+.nav-link{
+
+    position:relative;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-4px;
+
+    width:0;
+
+    height:1px;
+
+    background:var(--color-heading);
+
+    transition:width .3s ease;
+
+}
+
+.nav-link:hover::after{
+
+    width:100%;
+
+}
+
+
+
+/* ==========================================================
+   FOOTER LINKS
+========================================================== */
+
+.footer-links a:hover{
+
+    transform:translateX(4px);
+
+}
+
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}

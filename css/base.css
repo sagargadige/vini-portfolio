@@ -1,0 +1,280 @@
+/* ==========================================================
+   BASE.CSS
+   Vandana Godhani Portfolio
+   Global Foundation Styles
+   Bootstrap 5.3 Compatible
+========================================================== */
+
+/* ==========================================================
+   ROOT
+========================================================== */
+
+html{
+    scroll-behavior:smooth;
+    font-size:16px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+
+    background:var(--color-background);
+    color:var(--color-text);
+
+    font-family:var(--font-body);
+    font-size:var(--fs-body);
+    font-weight:var(--fw-regular);
+    line-height:var(--lh-body);
+
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* ==========================================================
+   TEXT SELECTION
+========================================================== */
+
+::selection{
+    background:var(--selection-bg);
+    color:var(--selection-text);
+}
+
+/* ==========================================================
+   HEADINGS
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    margin:0;
+
+    color:var(--color-heading);
+
+    font-family:var(--font-heading);
+
+    font-weight:var(--fw-regular);
+
+    line-height:var(--lh-heading);
+
+    letter-spacing:var(--ls-tight);
+}
+
+h1{
+    font-size:var(--fs-h1);
+}
+
+h2{
+    font-size:var(--fs-h2);
+}
+
+h3{
+    font-size:var(--fs-h3);
+}
+
+h4{
+    font-size:var(--fs-h4);
+}
+
+h5{
+    font-size:var(--fs-h5);
+}
+
+h6{
+    font-size:var(--fs-h6);
+}
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+p{
+    margin:0;
+    color:var(--color-text);
+}
+
+small{
+    font-size:var(--fs-small);
+}
+
+strong{
+    font-weight:var(--fw-semibold);
+}
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+    transition:color var(--transition-fast);
+}
+
+a:hover{
+    color:var(--color-accent);
+}
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+img,
+picture{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+}
+
+/* ==========================================================
+   LISTS
+========================================================== */
+
+ul,
+ol{
+
+    margin:0;
+
+    padding:0;
+
+    list-style:none;
+}
+
+/* ==========================================================
+   BUTTON RESET
+========================================================== */
+
+button{
+
+    border:none;
+
+    background:none;
+
+    padding:0;
+
+    color:inherit;
+
+    font:inherit;
+
+    cursor:pointer;
+}
+
+/* ==========================================================
+   FORM ELEMENTS
+========================================================== */
+
+input,
+textarea,
+select{
+
+    font:inherit;
+
+    color:inherit;
+}
+
+textarea{
+    resize:vertical;
+}
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+/* ==========================================================
+   HR
+========================================================== */
+
+hr{
+
+    margin:0;
+
+    border:none;
+
+    border-top:1px solid var(--color-border);
+}
+
+/* ==========================================================
+   ACCESSIBILITY
+========================================================== */
+
+:focus-visible{
+
+    outline:2px solid var(--color-accent);
+
+    outline-offset:3px;
+}
+
+[hidden]{
+
+    display:none !important;
+}
+
+.visually-hidden{
+
+    position:absolute;
+
+    width:1px;
+
+    height:1px;
+
+    padding:0;
+
+    margin:-1px;
+
+    overflow:hidden;
+
+    clip:rect(0,0,0,0);
+
+    white-space:nowrap;
+
+    border:0;
+}
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:.01ms !important;
+
+        animation-iteration-count:1 !important;
+
+        transition-duration:.01ms !important;
+
+        scroll-behavior:auto !important;
+    }
+
+}
