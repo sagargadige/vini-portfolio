@@ -168,6 +168,20 @@
         max-width:320px;
 
     }
+    .education-section .section-title,
+    .experience-section .section-title{
+
+        max-width:100%;
+
+        white-space:normal;
+
+        word-break:normal;
+
+        overflow-wrap:break-word;
+
+        line-height:1.2;
+
+    }
 
 }
 /* ==========================================================
@@ -405,9 +419,7 @@
 
 .experience-section .section-title{
 
-    max-width:none;
-
-    width:100%;
+    max-width:700px;
 
     margin:.75rem auto 0;
 
@@ -416,8 +428,6 @@
     line-height:1.15;
 
     letter-spacing:-0.02em;
-
-    white-space:nowrap;
 
 }
 
@@ -955,9 +965,7 @@
 
 .education-section .section-title{
 
-     max-width:none;
-
-    width:100%;
+    max-width:700px;
 
     margin:.75rem auto 0;
 
@@ -966,8 +974,6 @@
     line-height:1.15;
 
     letter-spacing:-0.02em;
-
-    white-space:nowrap;
 
 }
 
